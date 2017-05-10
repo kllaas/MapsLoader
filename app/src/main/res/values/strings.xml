@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MapsLoader</string>
+    <string name="device_memory">Device memory</string>
+    <string name="stoarage_state" formatted="true">Free %d MB</string>
+    <string name="world_regions">World regions</string>
+    <string name="regions">Regions</string>
+    <string name="progress_state">%1$d/%2$d MB</string>
+    <string name="title_downloading">Downloading</string>
+</resources>
