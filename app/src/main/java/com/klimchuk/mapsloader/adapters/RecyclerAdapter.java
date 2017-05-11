@@ -102,8 +102,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         switch (currentRegion.getLoadingState()) {
             case NOT_LOADING:
-                holder.ivDownload.setOnClickListener(v ->
-                        onDownloadClick.onItemClick(currentRegion));
+                holder.ivDownload.setOnClickListener(v -> {
+                    onDownloadClick.onItemClick(currentRegion);
+
+                    notifyItemChanged(holder.getAdapterPosition());
+                });
                 holder.ivDownload
                         .setImageDrawable(mContext.getResources()
                                 .getDrawable(R.drawable.ic_action_import));
